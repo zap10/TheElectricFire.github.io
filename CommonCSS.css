@@ -1,0 +1,15 @@
+@font-face{
+    font-family: RobotoCn;
+    src:  url(Resources/Roboto-Condensed.ttf);
+}
+
+@font-face{
+    font-family: RobotoTh;
+    src: url(Resources/Roboto-Thin.ttf);   
+}
+
+body{
+    font-family: RobotoCn;
+}
+
+
