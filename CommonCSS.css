@@ -10,6 +10,56 @@
 
 body{
     font-family: RobotoCn;
+    background-image: url("Resources/Index%20Page%20Background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
 }
 
+.menu-bar{
+    position: fixed;
+    background-color: #2b2b2b;
+    margin-left: -8px;
+    margin-right: -10px;
+    margin-top: -5px;
+    height: 50px;
+    width: 100%;
+}
+
+.menu-bar-title{
+    float: left;
+    font-size: 25px;
+    padding: 10.5px 20px 10px 20px;
+}
+
+.site-button{
+    background-color:  #3e3e3e;
+    margin-left: 3px;
+    margin-top: 4px;
+    font-size: 20px;
+    padding: 9.5px 20px 9px 20px;
+    float: right;
+    transition: background-color 0.7s;
+}
+
+.site-button:hover{
+    background-color: #2b2b2b;
+}
+
+.site-button-active{
+    background-color:   #2b2b2b;
+    font-size: 20px;
+    margin-top: 4px;
+    padding: 9.5px 20px 9px 20px;
+    float: right;
+    margin-left: 3px;
+}
+
+a .site-button{
+    text-decoration: none;
+}
+
+a .site-button-active{
+    text-decoration: none;
+}
 
