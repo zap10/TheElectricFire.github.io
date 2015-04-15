@@ -5,12 +5,14 @@
         <link rel="icon" type="image/jpg" href="Resources/The%20Electric%20FIre%20FC.jpg">
         <link rel="stylesheet" type="text/css" href="CommonCSS.css">
         <link rel="stylesheet" type="text/css" href="HomeCSS.css">
+        <script src="JS/Audio.js"></script>
     </head>
     <body>
         <div class="menu-wrap">
             <nav class="menu">
                 <ul class="clearfix">
                     <li class = "current-item"><a href="home.html">The Electric Fire</a></li>
+                    
                     <li>
                         <a href="#">Projects &amp; Hobbies <span class="arrow">&#9660;</span></a>
                         <ul class="sub-menu">
@@ -20,8 +22,18 @@
                             <li><a href="#">F1 in Schools</a></li>
                         </ul>
                     </li>
+                    
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">About Me</a></li>
+                    
+                    <li>
+                        <a href="#">Audio <span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li id = "aud-control" onclick="pauseAudio()"><a href="#">Pause Audio</a></li>
+                            <li onclick="switchAudio()"><a href="#">Switch Track</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </nav>
         </div>
@@ -30,5 +42,6 @@
         <div class = "TEFbanner-text"> 
             Welcome to my website.
         </div>
+        <audio src = "Resources/Tracks/476128.mp3" id = "bg-audio" autoplay loop/>
     </body>
 </html>
