@@ -16,50 +16,92 @@ body{
     color: white;
 }
 
-.menu-bar{
-    position: fixed;
-    background-color: #2b2b2b;
-    margin-left: -8px;
-    margin-right: -10px;
-    margin-top: -5px;
-    height: 50px;
-    width: 100%;
+.clearfix:after {
+    display:block;
+    clear:both;   
 }
-
-.menu-bar-title{
-    float: left;
-    font-size: 25px;
-    padding: 10.5px 20px 10px 20px;
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#292929; 
+    margin-left: 100px;
 }
-
-.site-button{
-    background-color:  #3e3e3e;
-    margin-left: 3px;
-    margin-top: 4px;
-    font-size: 20px;
-    padding: 9.5px 20px 9px 20px;
-    float: right;
-    transition: background-color 0.7s;
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
 }
-
-.site-button:hover{
-    background-color: #2b2b2b;
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
 }
-
-.site-button-active{
-    background-color:   #2b2b2b;
-    font-size: 20px;
-    margin-top: 4px;
-    padding: 9.5px 20px 9px 20px;
-    float: right;
-    margin-left: 3px;
-}
-
-a .site-button{
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
     text-decoration: none;
 }
-
-a .site-button-active{
-    text-decoration: none;
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:  #5098c4;
 }
-
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#27282e;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:0px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#27282e;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:18px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#303341;
+}

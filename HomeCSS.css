@@ -3,4 +3,19 @@ body{
     color:white;
 }
 
+.img-banner{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-top:60px;
+}
 
+.TEFbanner-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.centered-text{
+    text-align: center;
+}
