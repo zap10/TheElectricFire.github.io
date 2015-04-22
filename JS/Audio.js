@@ -1,5 +1,5 @@
-var audioList = ["476128", "153594", "476613"];
-var audioVol = [0, 0.2, 0.4, 0.6, 0.8, 1];
+var audioList = ["476128", "153594", "383793", "476613"];
+var audioVol = 1;
 var activeAudio = 0;
 
 function playAudio() {
@@ -23,4 +23,20 @@ function switchAudio() {
     if (activeAudio >= audioList.length) {
         activeAudio = -1;
     }
+}
+
+function controlVolume(increment) {
+    "use strict";
+    
+    audioVol += increment;
+    
+    if (audioVol > 1) {
+        audioVol = 1;
+    }
+    
+    if (0 > audioVol) {
+        audioVol = 0;
+    }
+    
+    document.getElementById("bg-audio").volume(controlVolume);
 }
