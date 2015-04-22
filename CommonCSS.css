@@ -11,7 +11,8 @@
 body{
     font-family: RobotoCn;
     background-image: url("Resources/Index%20Page%20Background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
     background-size:cover;
     color: white;
 }
