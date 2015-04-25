@@ -12,7 +12,7 @@ var myDataRef = new Firebase('https://anti-hacker-base.firebaseio.com/');
      function safe(text) {
          "use strict";
        var chatme = (new DOMParser).parseFromString("<div>"+text+"</div>", "text/html");
-       var tags = chatme.getElementsByTagName("*");
+       var tags = chatme.getElementsByTagName("*");      
        for (var j = 4; j < tags.length; j++) {
             var replacement;
             if (safe.allowedElements.indexOf(tags[j].tagName) === -1) {

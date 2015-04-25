@@ -28,14 +28,15 @@ body{
 
 #messageInput{
     font-family: RobotoCn; 
-    width: 90%; 
+    width: 80%; 
     padding-left: 5px;
     height: 50px;
     text-align: center;
     font-size: 15px;
     vertical-align: middle;
-    padding-top: 25px;
     margin-bottom: 5px;
+    padding-top: 5px;
+    
 }
 
 #nameInput{
@@ -63,4 +64,12 @@ body{
     width: 80%;
     background-color: #27282e;
     color: #5098c4;
+}
+
+.notes{
+    font-size: 24px;
+}
+
+.TEFbanner-text a:visited{
+    color:aquamarine;
 }
