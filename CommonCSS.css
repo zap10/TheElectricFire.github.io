@@ -8,18 +8,54 @@
     src: url(Resources/Roboto-Thin.ttf);   
 }
 
+@font-face{
+    font-family: OpenSansLt;
+    src: url(Resources/Open%20Sans/OpenSans-Light.ttf);
+}
+
+.spacehold{
+    height: 30px;
+}
+
 body{
     font-family: RobotoCn;
     background-image: url("Resources/Index%20Page%20Background.jpg");
-    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    font-size:19px;
     color: white;
 }
 
+.TEFbanner-text{
+    margin-top: 15px;
+    margin-left: 8%;
+    margin-right:  8%;
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    font-size: 19px;
+    background-color: rgba(0,0,0,0.6);
+    transition: background-color 0.6s;
+}
+
+.TEFbanner-text:hover{
+    background-color: rgba(0,0,0,0.9);
+}
+
+.title-text{
+    text-align: center;
+    font-size: 27px;
+    font-family: RobotoCn;
+}
+
 .clearfix:after {
-    display:block;
-    clear:both;   
+    clear:both; 
+    display: none;
 }
  
 /*----- Menu Outline -----*/
@@ -27,28 +63,32 @@ body{
     width:100%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
     background:#292929; 
-    margin-left: 50px;
+    margin-left: 125px;
 }
  
 .menu {
-    width:1000px;
+    width:2000px;
     margin:0px auto;
+    font-size: 19px;
 }
  
 .menu li {
     margin:0px;
     list-style:none;
+    font-size: 19px;
 }
  
 .menu a {
     transition:all linear 0.15s;
     color:#919191;
     text-decoration: none;
+    font-size: 19px;
 }
  
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
     color:  #5098c4;
+    font-size: 19px;
 }
  
 .menu .arrow {
@@ -68,12 +108,16 @@ body{
     padding:10px 40px;
     display:inline-block;
     text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    font-size: 19px;
 }
  
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
     background:#27282e;
+    font-size: 19px;
 }
- 
+
+
+
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
     z-index:1;
@@ -91,18 +135,21 @@ body{
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
     background:#27282e;
+    font-size: 19px;
 }
  
 .sub-menu li {
     display:block;
-    font-size:18px;
+    font-size: 19px;
 }
  
 .sub-menu li a {
     padding:10px 30px;
     display:block;
+    font-size: 19px;
 }
  
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#303341;
+    font-size: 19px;
 }

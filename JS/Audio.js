@@ -18,6 +18,7 @@ function pauseAudio() {
 
 function switchAudio() {
     "use strict";
+    pauseAudio();
     activeAudio += 1;
     document.getElementById("bg-audio").src = "Resources/Tracks/" + audioList[activeAudio] + ".mp3";
     if (activeAudio >= audioList.length) {

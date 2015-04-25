@@ -18,30 +18,44 @@
                         <ul class="sub-menu">
                             <li><a href="">Programming</a></li>
                             <li><a href="#">Geometry Dash</a></li>
-                            <li><a href="#">FanFiction</a></li>
+                            <li><a href="#">Books</a></li>
                             <li><a href="#">F1 in Schools</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Applets <span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="chat.html">Chat</a></li>
                         </ul>
                     </li>
                     
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">About Me</a></li>
-                    
                     <li>
                         <a href="#">Audio <span class="arrow">&#9660;</span></a>
                         <ul class="sub-menu">
-                            <li id = "aud-control" onclick="pauseAudio()"><a href="#">Pause Audio</a></li>
+                            <li id = "aud-control" onclick="playAudio()"><a href="#">Play Audio</a></li>
                             <li onclick="switchAudio()"><a href="#">Switch Track</a></li>
                         </ul>
                     </li>
-                    
                 </ul>
             </nav>
         </div>
         
-        <img src = "Resources/The%20Electric%20FIre%20FS.jpg" alt = "The Electric Fire's Banner" class = "img-banner"/>
-        <div class = "TEFbanner-text"> 
-            Welcome to my website.
-        </div>
-        <audio src = "Resources/Tracks/476128.mp3" id = "bg-audio" autoplay loop/>
+        <div class = "spacehold"></div>
+         <img src = "Resources/The%20Electric%20FIre%20FS.jpg" alt = "The Electric Fire's Banner" class = "img-banner"/>
+        <div class = "TEFbanner-text">  
+            <span class = "title-text">Hi! I'm The Electric Fire!</span><br><br>
+            Congratulations! You've found my website!<br>
+            I'm a thirteen year old eighth grader in Sydney, Australia. I spend my life coding, doing recreational reading/writing, studying, researching random stuff and playing a game called Geometry Dash. <br><br>
+            Using my web development skills, I wrote the code for this site from scratch. I started working on it in April, and am currently hosting on GitHub Pages. I hope to get my own domain up by the end of this year.<br>
+            You can find out more about what I do under the "Projects and Hobbies" tabs. <br><br>
+            Please note that this site is not mobile-optimised, but it should still work without crashing.
+            Also, you can play some background audio from the "Audio" tab, although you will have to pause it on each individual page. Audio doesn't work on mobile devices to the best of my knowledge. <br><br>
+            There's a chat applet under the "Applets" tab. This works as live chat, which auto-refreshes as soon as a post comes through, similarly to Google Hangouts. There will be more information on the applet's page.
+            <br><br>Just note that this is still a work in progress. Happy browsing!
+        </div>  
+        <audio src = "Resources/Tracks/476128.mp3" id = "bg-audio" loop/>
     </body>
 </html>
