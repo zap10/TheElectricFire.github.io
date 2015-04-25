@@ -1,12 +1,14 @@
 var host = "theelectricfire.github.io";
-if (window.location.host == host && window.location.protocol != "https:") {window.location.protocol = "https:";
+if (window.location.host === host && window.location.protocol !== "https:") {
+    window.location.protocol = "https:";
+}
 
 var audioList = ["476128", "153594", "383793", "476613"];
 var audioVol = 1;
 var activeAudio = 0;
 
 function playAudio() {
-    "use strict";   
+    "use strict";
     document.getElementById("bg-audio").play();
     document.getElementById("aud-control").innerHTML = "<a href=\"#\">Pause Audio</a>";
     document.getElementById("aud-control").onclick = pauseAudio;
