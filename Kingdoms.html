@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Books | The Electric Fire</title>
+        <title>Applets | The Electric Fire</title>
         <link rel="icon" type="image/jpg" href="Resources/The%20Electric%20FIre%20FC.jpg">
         <link rel="stylesheet" type="text/css" href="CommonCSS.css">
-        <script src="JS/Audio.js"></script>        
+        <link rel="stylesheet" type="text/css" href="KingdomsCSS.css">
+        <script src="JS/Audio.js"></script>
+         <script src="JS/Kingdoms.js"></script> 
     </head>
-    <body>
+    <body onload="onloadQuestion()">
         <div class="menu-wrap">
             <nav class="menu">
                 <ul class="clearfix">
@@ -48,10 +50,18 @@
         <div class = "page-content">
             &nbsp;
             <div class = "TEFbanner-text">  
-                <span class = "title-text">Books</span><br><br>
-                <div id = "messagesDiv"></div>
-                Put simply, I enjoy reading. Reading is one of the many things I do on my phone, for example. Here I'm going to mention a few of my favourite books. Work in Progress.
-            </div>  
+                <span class = "title-text">The Kingdoms of Life, Work In Progress</span><br><br>
+                This is a small applet I made, using JavaScript to change the applet's content as questions are answered.<br>
+                Basically, you have to answer questions about a living organism to find what kingdom it is a part of.
+            </div>
+            
+            <div class = "TEFbanner-text">  
+                <span class = "title-text">'Find the Kingdom' Applet</span><br><br>
+                <div id = "questionDiv">Loading...<br>If this doesn't load within 20 seconds, JavaScript has been disabled.</div>
+                <div class = "responseButton" id = "responseYes"></div>
+                <div class = "responseButton" id = "responseNo"></div>
+                <div id = "statisticStream"></div>
+            </div>
         </div>
     
         <audio src = "Resources/Tracks/476128.mp3" id = "bg-audio" loop/>
