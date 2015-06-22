@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Applets | The Electric Fire</title>
+        <link rel="icon" type="image/jpg" href="Resources/The%20Electric%20FIre%20FC.jpg">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="CommonCSS.css">
+        <link rel="stylesheet" type="text/css" href="ChatCSS.css">
+        <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+        <script src="JS/Audio.js"></script>        
+    </head>
+    <body>
+        <div class="menu-wrap">
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li><a href="home.html">The Electric Fire</a></li>
+                    
+                    <li>
+                        <a href="#">Projects &amp; Hobbies <span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="programming.html">Programming</a></li>
+                            <li><a href="geometry-dash.html">Geometry Dash</a></li>
+                            <li><a href="books.html">Books</a></li>
+                            <li><a href="F1inSchools.html">F1 in Schools</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class = "current-item">
+                        <a href="#">Applets <span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="chat.html">Chat</a></li>
+                            <li><a href="Kingdoms.html">Find the Kingdom</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About-Me.html">About Me</a></li>
+                    <li>
+                        <a href="#">Audio <span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li id = "aud-control" onclick="playAudio()"><a href="#">Play Audio</a></li>
+                            <li onclick="switchAudio()"><a href="#">Switch Track</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class = "spacehold">&nbsp;</div>
+        
+        <div class = "page-content">
+            &nbsp;
+            <div class = "TEFbanner-text">  
+                <span class = "title-text">Team KA Chat Applet</span><br><br>
+                <div id = "messagesDiv"></div>
+               <form name = "commenter" action = "javascript:myDataRef.push({name: document.forms.commenter.name.value, text: document.forms.commenter.text.value.split('\n').join('<br>')}); 
+">
+                   <input type = "text" id = "nameInput" placeholder = "Name" name = "name"><br/>  
+                   <textarea type= "text"  id="messageInput" placeholder = "Message" name = "text"></textarea><br>
+                    <input type = "submit" id = "messageSubmit" value = "Submit Message">
+               </form> 
+            </div>  
+            
+            <div class = "TEFbanner-text">  
+                <span class = "notes">Info</span><br><br>
+                
+                This chat is for Team KA only. If you wish to chat about other stuff, <a href="Chat.html">click here</a> to go to my main Chat applet.Try not to use offensive language here, and don't be rude or insult others. I can easily delete posts here, and if necessary, wipe the whole database.<br><br>  
+                
+               This is something myself and a friend of mine, Noble Mushtak (<a href="bit.ly/nhmsite">make sure to check out his site by clicking here!</a>) made in mid-2014 for fun. It turned out pretty well, so I moved it to this site, making a few edits. Without realising, I made a huge error in the Security Rules for the server which hosts the databases for the applet, Firebase, which Noble helped me debug.<br>
+                I owe you Noble, big time. Thanks! =D
+            </div>  
+        </div>
+        
+        <audio>
+            <source src="Resources/Sound%20Effects/DingLing.mp3"/>
+        </audio>
+        
+        <audio src = "Resources/Tracks/476128.mp3" id = "bg-audio" loop/>
+        
+         <script src = "JS/TeamKAChat.js"></script>
+    </body>
+</html>
