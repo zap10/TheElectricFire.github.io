@@ -70,6 +70,14 @@ body{
     font-size: 24px;
 }
 
+.TEFbanner-text a{
+    color:cyan; 
+}
+
+.TEFbanner-text a:hover{
+    color:darkcyan;
+}
+
 .TEFbanner-text a:visited{
     color:aquamarine;
 }

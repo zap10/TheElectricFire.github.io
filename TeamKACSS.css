@@ -1,0 +1,17 @@
+body{
+    font-family: RobotoCn;
+    background-image: url("Resources/TeamKAChat%20Background.jpg");
+    background-size: 100% 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size:19px;
+    color: white;
+}
+.menu a {
+    color:#68fac8;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    color:  #50c4a0;
+}
