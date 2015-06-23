@@ -33,3 +33,7 @@ var myDataRef = new Firebase('https://anti-hacker-base.firebaseio.com/');
        return $(tags[3]);
      };
      safe.allowedElements = ["TIME", "SECTION", "NAV", "ARTICLE", "ASIDE", "HEADER", "FOOTER", "ADDRESS", "DL", "DT", "DD", "FIGURE", "FIGCAPTION", "EM", "STRONG", "SMALL", "S", "CITE", "DFN", "ABBR", "CODE", "VAR", "SAMP", "KBD", "SUB", "SUP", "I", "B", "U", "MARK", "RUBY", "RT", "RP", "BDI", "BDO", "WBR", "P", "A", "BR", "HR", "SPAN", "UL", "OL", "LI", "DIV", "INPUT", "SELECT", "OPTION", "TEXTAREA", "TABLE", "CAPTION", "COLGROUP", "COL", "TBODY", "THEAD", "TFOOT", "TR", "TD", "TH", "MARQUEE", "H1", "H2", "H3", "H4", "H5", "H6"];
+
+function cleartext(){
+    document.getElementById("messageInput").value = "";
+};

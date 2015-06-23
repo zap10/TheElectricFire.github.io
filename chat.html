@@ -53,7 +53,7 @@
             <div class = "TEFbanner-text">  
                 <span class = "title-text">Chat Applet</span><br><br>
                 <div id = "messagesDiv"></div>
-               <form name = "commenter" action = "javascript:myDataRef.push({name: document.forms.commenter.name.value, text: document.forms.commenter.text.value.split('\n').join('<br>')}); 
+               <form name = "commenter" action = "javascript:myDataRef.push({name: document.forms.commenter.name.value, text: document.forms.commenter.text.value.split('\n').join('<br>')});  cleartext();
 ">
                    <input type = "text" id = "nameInput" placeholder = "Name" name = "name"><br/>  
                    <textarea type= "text"  id="messageInput" placeholder = "Message" name = "text"></textarea><br>
