@@ -23,7 +23,7 @@ $("#messageSubmit").click(function(event) {
 
 var myDataRef = new Firebase('https://teamkachat.firebaseio.com/');
 //Also, I got rid of this indentation with Emacs because Emacs is _great_ at doing that kind of stuff.
-myDataRef.limit(20).on('child_added', function(snapshot) {
+myDataRef.limit(170).on('child_added', function(snapshot) {
     var message = snapshot.val();
     displayChatMessage(message.name, message.text, message.date);
     $("audio")[0].play()
